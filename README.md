@@ -3,7 +3,7 @@
 </p>
 
 <h3 align="center">
-  Desafio: Construindo Foodfy
+  Desafio 3: Refatorando Foodfy
 </h3>
 
 ## :rocket: Sobre o desafio
@@ -11,14 +11,7 @@
 Nesse desafio vou construir um site completo para uma empresa de receitas chamada Foodfy.
 
 
-# Front-end
 
-- [x] Organizar às Paginas com HTML.
-- [x] Padronizando Layout com CSS.
-- [x] Adicionando Modal com HTML/CSS/JS.
-- [x] Adicionando Responsividade com Media Queries
-
-# 
 
 <h3 align="center">
   Foodfy
