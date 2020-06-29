@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
+header,
+section,
+main {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* === ↑ Config Section ↑ === */
+
+header {
+    padding: 2rem 0;
+    align-items: center;
+    display: flex;
+    margin-bottom: 16px;
+}
+
+header #menu {
+    margin-left: 8rem;
+}
+
+header #menu a {
+    padding: 6px 6px;
+    margin: 0 3px;
+    line-height: 26px;
+
+}
+
+.active_link {
+    font-weight: bold;
+}
+
+section#ad {
+    background: #FBDFDB;
+    min-height: 366px;
+    position: relative;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+
+}
+
+section#ad .ad__info {
+    margin-left: 4rem;
+    max-width: 316px;
+    z-index: 1;
+
+}
+
+section#ad .ad__info span strong {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: calc(2rem + 2rem);
+}
+
+section#ad .ad__info p {
+    opacity: 0.7;
+    font-size: calc(1rem + 2px);
+    line-height: 28px;
+}
+
+section#ad .ad__img {
+    position: absolute;
+    right: 10vh;
+    bottom: 2px;
+}
+
+main h2 {
+    font-size: calc(1rem + 8px);
+    font-weight: bold;
+    line-height: 34px;
+    padding: 4rem 0 2rem;
+}
+
+main #cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    column-gap: 20px;
+}
+
+main .card {
+    margin: 0 auto;
+}
+
+main .card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+main .card .card__title {
+    font-size: calc(1rem + 2px);
+    line-height: 28px;
+}
+
+main .card .card__author {
+    font-size: calc(1rem - 2px);
+    line-height: 24px;
+    color: #777777;
+}
+
+#misterioso {
+    margin: 0 6px;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    margin: 4rem 0 0 0;
+    width: 100%;
+    background-color: #EEEEEE;
+    height: 62px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: #999999;
+    font-size: calc(1rem - 2px);
+    line-height: 24px;
+}
+
+/* ↓ Page Sobre ↓ */
+
+main#sobre__content h3 {
+    font-size: calc(1rem + 8px);
+    line-height: 34px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+main#sobre__content h4 {
+    font-size: calc(1rem + 4px);
+    line-height: 30px;
+    font-weight: bold;
+    margin: 2rem 0 10px;
+}
+
+
+main#sobre__content p {
+    font-size: calc(1rem + 2px);
+    line-height: 28px;
+    color: #444444;
+}
+
+/* ↑ Page Sobre ↑ */
+
+/* ↓ Page Receitas / Modal ↓ */
+
+.modal__overlay {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(17, 17, 17, 0.7);
+    visibility: hidden;
+}
+
+.modal {
+    position: relative;
+    max-width: 660px;
+    background: #eee;
+    margin: 20vh auto;
+    border-radius: 16px;
+}
+
+.modal__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.modal__content .modal__img {
+    max-width: 600px;
+    margin: 0 0 20px;
+
+}
+
+.modal__img img {
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.modal__content .modal__info {
+    margin-bottom: 5rem;
+}
+
+.modal__content h3 {
+    font-size: calc(1rem + 8px);
+    line-height: 34px;
+}
+
+.modal__content p {
+    font-size: calc(1rem + 2px);
+    line-height: 28px;
+    color: #777
+}
+
+
+.modal__content .modal__close {
+    position: absolute;
+    bottom: 3vh;
+    cursor: pointer;
+}
+
+.modal__content .modal__close {
+    color: #999;
+
+}
+
+.modal__overlay.active {
+    visibility: visible;
+}
+
+/* ↑ Page Receitas / Modal ↑ */
+
+
+/* ↓ Config Media ↓ */
+
+@media (max-width: 960px) {
+    main #cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 700px) {
+    main #cards {
+        grid-template-columns: 3fr;
+    }
+
+    section#ad {
+        flex-direction: column;
+        min-height: 425px;
+    }
+
+    section#ad .ad__info {
+        margin-left: 0;
+    }
+}
+
+/* ↑ Config Media ↑ */
