@@ -1,0 +1,25 @@
+{
+  "name": "foodfy-refactored",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">\r   <img width=\"300\" src=\"source/img/logo-launchbase.png\">\r </p>",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RodrigoMiquilino/foodfy-refactored.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/RodrigoMiquilino/foodfy-refactored/issues"
+  },
+  "homepage": "https://github.com/RodrigoMiquilino/foodfy-refactored#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

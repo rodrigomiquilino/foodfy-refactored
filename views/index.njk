@@ -1,0 +1,39 @@
+{% extends "layout.njk" %}
+
+{% block titlePage %}
+
+    <title>Foodfy</title>
+
+{% endblock %}
+
+{% block content %}
+
+    <section id="ad">
+        <div class="ad__info">
+            <span>
+                <strong>The best recipes</strong>
+            </span>
+            <p>
+                Learn how to build the best dishes with recipes created by professionals from all over the world.
+            </p>
+        </div>
+        <div class="ad__img"><img src="/img/chef.png" alt="chefe render"></div>
+    </section>
+    <main id="most__accessed">
+        <h2>Most Accessed</h2>
+        <div id="cards">
+            {% for recipe in recipes %}
+                <a class="card" id="{{loop.index0}}">
+                    <div class="card__img"><img src="{{recipe.image}}" alt="{{recipe.title}}"></div>
+                    <div class="card__info">
+                        <h3 class="card__title">{{recipe.title}}</h3>
+                        <p class="card__author">por
+                            {{recipe.author}}</p>
+                    </div>
+                </a>
+            {% endfor %}
+
+        </div>
+    </main>
+
+{% endblock %}

@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="300" src="source/img/logo-launchbase.png">
+  <img width="300" src="/public/img/logo-launchbase.png">
 </p>
 
 <h3 align="center">
@@ -20,5 +20,5 @@ Nesse desafio vou construir um site completo para uma empresa de receitas chamad
 # 
 
 <p align="center">
-  <img width="100%" src="source/gif/tumbnail.gif">
+  <img width="100%" src="/public/gif/tumbnail.gif">
 </p>

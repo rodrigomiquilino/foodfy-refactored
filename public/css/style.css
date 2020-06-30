@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
+header,
+section,
+main {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* === ↑ Config Section ↑ === */
+
+header {
+
+    align-items: center;
+    display: flex;
+    padding-top: 31px;
+    margin-top: 31px;
+    margin-bottom: 50px;
+}
+
+header #menu {
+    margin-left: 8rem;
+}
+
+header #menu a {
+    padding: 6px 6px;
+    margin: 0 3px;
+    line-height: 26px;
+
+}
+
+.active_link {
+    font-weight: bold;
+}
+
+section#ad {
+    background: #FBDFDB;
+    min-height: 366px;
+    position: relative;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+
+}
+
+section#ad .ad__info {
+    margin-left: 4rem;
+    max-width: 316px;
+    z-index: 1;
+
+}
+
+section#ad .ad__info span strong {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: calc(2rem + 2rem);
+}
+
+section#ad .ad__info p {
+    opacity: 0.7;
+    font-size: calc(1rem + 2px);
+    line-height: 28px;
+}
+
+section#ad .ad__img {
+    position: absolute;
+    right: 10vh;
+    bottom: 2px;
+}
+
+main h2 {
+    font-size: calc(1rem + 8px);
+    font-weight: bold;
+    line-height: 34px;
+    padding: 4rem 0 2rem;
+}
+
+main #cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    column-gap: 20px;
+}
+
+main .card {
+    margin: 0 auto;
+}
+
+main .card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+main .card .card__title {
+    font-size: calc(1rem + 2px);
+    line-height: 28px;
+}
+
+main .card .card__author {
+    font-size: calc(1rem - 2px);
+    line-height: 24px;
+    color: #777777;
+}
+
+#misterioso {
+    margin: 0 6px;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    margin: 4rem 0 0 0;
+    width: 100%;
+    background-color: #EEEEEE;
+    height: 62px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: #999999;
+    font-size: calc(1rem - 2px);
+    line-height: 24px;
+}
+
+/* ↓ Page Sobre ↓ */
+
+main#sobre__content h3 {
+    font-size: calc(1rem + 8px);
+    line-height: 34px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+main#sobre__content h4 {
+    font-size: calc(1rem + 4px);
+    line-height: 30px;
+    font-weight: bold;
+    margin: 2rem 0 10px;
+}
+
+
+main#sobre__content p {
+    font-size: calc(1rem + 2px);
+    line-height: 28px;
+    color: #444444;
+}
+
+/* ↑ Page Sobre ↑ */
+
+/* ↓ Page Receitas / Modal ↓ */
+
+.recipe__content-img {
+    margin-bottom: 50px;
+}
+
+.recipe__content-img img {
+    border-radius: 15px;
+}
+
+.recipe__content-info {
+    margin-bottom: 50px;
+}
+
+.recipe__content-info h1 {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 42px;
+}
+
+.recipe__content-info p {
+    font-size: 20px;
+    line-height: 24px;
+    color: #777
+}
+
+section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+section h2 span {
+    font-size: 12px;
+    line-height: 14px;
+    color: #999;
+}
+
+
+section ul li {
+    font-size: 18px;
+    line-height: 28px;
+    color: #444;
+}
+
+section.recipe__content-ingredients ul li:before {
+    content: "\2022";
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #111;
+    /* Change the color */
+    font-weight: bolder;
+    /* If you want it to be bold */
+    display: inline-block;
+    /* Needed to add space between the bullet and the text */
+    width: 1rem;
+    /* Also needed for space (tweak if needed) */
+    /* Also needed for space (tweak if needed) */
+}
+
+section.recipe__content-step ul li {
+    list-style: decimal;
+    list-style-position: inside;
+}
+
+section p {
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+}
+
+section.recipe__content-ingredients {
+    margin-bottom: 39px;
+}
+
+section.recipe__content-step {
+    margin-bottom: 39px;
+}
+
+section.recipe__content-addInfo {
+    margin-bottom: 39px;
+}
+
+
+/* ↑ Page Receitas / Modal ↑ */
+
+
+/* ↓ Page Error 404 ↓ */
+body.main#page-erro404 {
+    overflow-y: hidden;
+    /* Hide vertical scrollbar */
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
+    overflow: hidden;
+}
+
+main#page-erro404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20vh;
+    margin-bottom: 30vh;
+    padding-bottom: 1px;
+    scroll-behavior: smooth;
+}
+
+main#page-erro404 h1 {
+    font-size: 6rem;
+}
+
+/* ↑ Page Error 404 ↑ */
+
+
+
+/* ↓ Config Media ↓ */
+
+@media (max-width: 960px) {
+    main #cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 700px) {
+    main #cards {
+        grid-template-columns: 3fr;
+    }
+
+    section#ad {
+        flex-direction: column;
+        min-height: 425px;
+    }
+
+    section#ad .ad__info {
+        margin-left: 0;
+    }
+}
+
+/* ↑ Config Media ↑ */
