@@ -8,7 +8,7 @@
 
 ## :rocket: Sobre o desafio
 
-Nesse desafio vou construir um site completo para uma empresa de receitas chamada Foodfy.
+Nesse desafio vou refatorar o site completo para uma empresa de receitas chamada Foodfy.
 
 
 
